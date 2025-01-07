@@ -2,8 +2,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 
 public class MenuTest {
 
@@ -13,6 +11,7 @@ public class MenuTest {
                 "/Users/pauladabrowska/Documents/kurs_tester/automation_tester/Webdrivers/chromedriver");
 
         WebDriver driver = new ChromeDriver();
+
         driver.manage().window().maximize();
         driver.get("http://localhost:3000/pl");
 
@@ -64,30 +63,6 @@ public class MenuTest {
            System.out.println("Przycisk Blog przenosi na odpowiedni adres url - ok");
        }
 
-       driver.navigate().back();
-
-//       elementSupport.click();
-//       String currentUrl2 = driver.getCurrentUrl();
-//       if (currentUrl2.contains("support.rallly")) {
-//           System.out.println("Przycisk Wsparcie przenosi na odpowiedni adres url - ok");
-//       } else {
-//           System.out.println("Przycisk Wsparcie nie działa");
-//       }
-//
-//        System.out.println("ok.");
-//
-//       driver.navigate().back();
-//       String currentUrl3 = driver.getCurrentUrl();
-//       if (currentUrl3.contains("github.com")) {
-//           System.out.println("Przycisk Github przenosi na odpowiedni adres url - ok");
-//       }
-
-
-//        element.clear();
-//        element.sendKeys("Coderslab");
-
-
-//        element.submit();
         driver.quit();
 
 
